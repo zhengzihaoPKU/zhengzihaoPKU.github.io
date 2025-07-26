@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Zihao Zheng"
+title: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
