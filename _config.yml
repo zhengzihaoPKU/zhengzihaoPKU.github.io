@@ -25,11 +25,12 @@ author:
   avatar           : "profile.png"
   name             : "Zihao Zheng"
   pronouns         : "He/his"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "PhD student in PKU, focus on MLsys, HW/SW co-design."
   location         : "Beijing"
   employer         : "Peking University"
   uri              : # URL
   email            : "zhengzihao@stu.pku.edu.cn" 
+  zhihu            : "https://www.zhihu.com/people/zi-hao-31-90"
 
   # Academic websites
   academia         : # URL
@@ -46,7 +47,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "https://github.com/zhengzihaoPKU"
   kaggle           : # Username
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -75,14 +76,13 @@ author:
   wikipedia        : # Username
   xing             : # Username
   youtube          : # Username
-  zhihu            : # Username
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
   books:
     title: 'Books'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Journal Articles' 
   conferences:
     title: 'Conference Papers'
 
