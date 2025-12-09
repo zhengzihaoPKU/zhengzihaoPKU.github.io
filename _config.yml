@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Zihao Zheng's Website"
+title                    : "Zihao Zheng's Personal Web"
 title_separator          : "-"
 name                     : &name "Zihao Zheng"
 description              : &description "personal description"
@@ -24,18 +24,18 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Zihao Zheng"
-  pronouns         : "He/his"  
-  bio              : "PhD student in PKU, focus on MLsys, HW/SW co-design."
+  pronouns         : # URL
+  bio              : "PhD student in PKU, focus on MLsys, HW/SW co-design, and EDA."
   location         : "Beijing"
   employer         : "Peking University"
   uri              : # URL
-  email            : "zhengzihao@stu.pku.edu.cn" 
+  email            : "zhengzihao@stu.pku.edu.cn"
   zhihu            : "https://www.zhihu.com/people/zi-hao-31-90"
 
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : # URL
+  googlescholar    : "https://scholar.google.com/citations?user=p5Ft_qEAAAAJ"
   impactstory      : # URL
   orcid            : "https://orcid.org/0009-0008-4624-2853"
   semantic         : # URL
