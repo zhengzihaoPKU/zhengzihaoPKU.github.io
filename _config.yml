@@ -22,7 +22,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "图片1.png"
   name             : "Zihao Zheng"
   pronouns         : # URL
   bio              : "PhD student in PKU, focus on MLsys, HW/SW co-design, and EDA."
