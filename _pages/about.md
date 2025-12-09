@@ -6,7 +6,6 @@ redirect_from:
   - /about/
   - /about.html
 ---
-# About Me
 
 I'm a Ph.D from [School of CS](https://cs.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/). My research interest includes computer architecture, AI system and system design automation.
 
@@ -16,8 +15,10 @@ I am very fortunate to be advised by [Prof. Xiang Chen](https://cs.pku.edu.cn/in
 
 # News
 
-[2025-12] One paper about secure RRAM Accelerator is accepted by TCAD!
+## 2025
 
-[2025-11] I attend the Chinasoft Conference and delivered a work report on embodied intelligence.
+[2025-12] One paper about secure RRAM accelerators is accepted by TCAD!
+
+[2025-11] I attend the Chinasoft Conference and delivered a work report about embodied intelligence.
 
 [2025-11] One paper about MoE quantization is accpeted by DATE 2026!
