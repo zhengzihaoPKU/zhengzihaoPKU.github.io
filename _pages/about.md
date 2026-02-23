@@ -16,6 +16,7 @@ I am very fortunate to be advised by [Prof. Xiang Chen](https://cs.pku.edu.cn/in
 # News
 
 ## 2026
+* [2026-02] Five papers are accepted by DAC 2026!
 * [2026-01] One paper about efficient video generation is accepted by ICLR 2026!
 * [2026-01] Two papers are accepted by ISCAS 2026!
   
