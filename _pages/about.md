@@ -15,6 +15,8 @@ I am very fortunate to be advised by [Prof. Xiang Chen](https://cs.pku.edu.cn/in
 # News
 
 ## 2026
+
+* [2026-06] One paper is accepted by ECCV 2026!
 * [2026-06] One paper is accepted by SMC 2026!
 * [2026-05] I receive the President's Scholarship, the highest honor at Peking University!
 * [2026-04] I deliver an oral presentation at the DATE 2026 conference (Verona, Italy).
