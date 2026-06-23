@@ -27,8 +27,16 @@
     {% endif %}
 
     {% if post.image %}
+      {% assign preview_url = post.image %}
+      {% unless preview_url contains '://' %}
+        {% assign preview_url = preview_url | prepend: base_path %}
+      {% endunless %}
       <div class="archive__item-teaser" style="margin-bottom: 0.5em;">
-        <img src="{% if post.image contains '://' %}{{ post.image }}{% else %}{{ post.image | prepend: base_path }}{% endif %}" alt="{{ post.title }}" style="max-width: 100%; height: auto; border-radius: 4px;">
+        {% if post.image contains '.pdf' %}
+          <embed src="{{ preview_url }}" type="application/pdf" style="width: 100%; height: 240px; border-radius: 4px;">
+        {% else %}
+          <img src="{{ preview_url }}" alt="{{ post.title }}" style="max-width: 100%; height: auto; border-radius: 4px;">
+        {% endif %}
       </div>
     {% endif %}
 
