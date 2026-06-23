@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/2026-DATE
 excerpt: 'DynaMo: Runtime Switchable Quantization for MoE with Cross-Dataset Adaptation'
-date: 2026
+date: 2009-10-01
 venue: 'DATE 2026'
 slidesurl: ''
 paperurl: 'https://arxiv.org/abs/2503.21135'
