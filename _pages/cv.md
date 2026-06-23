@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Personal CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -8,7 +8,7 @@ redirect_from:
 ---
 {% include base_path %}
 
-# Education Experience
+## Education Experience
 
 * Ph.D in School of Computer Science, Peking University, 2025-2029 (expected).
   * Major: Computer Science (Computer Architecture)
@@ -19,7 +19,7 @@ redirect_from:
 * B.S. in School of Electrical Engineering, Beijing Jiaotong University, 2018-2022.
   * Major: Electrical Engineering and Automation
 
-# Project Experience
+## Project Experience
 * Post-training Strategy and Cluster Service Architecture of Composable Generalizable Embodied AI Models
   * Partner: Beijing Municipal Science and Technology Commission
 * High-Performance Collaborative Optimization of Edge Heterogeneous Computing Systems for Multimodal Intelligence
@@ -33,14 +33,14 @@ redirect_from:
 * Research on Acceleration Methods and Systems for Multimodal Reasoning
   * Partner: Huawei Nova Labs
 
-# Work Experience
+## Work Experience
 
 * Institute for AI Industry Research (AIR), Tsinghua University, 2024.01-2024.07
   * Advisor: Prof. Yuanchun Li, Prof. Yunxin Liu.
   * Duties: Research Intern of AIoT
   * Topics: Hardware-Friendly Neural Networks, LLM Inference Optimization on Device
 
-# Honors
+## Honors
 
 * President's Scholarship of Peking University (Peking University's top scholarship, only 2 students in the entire grade)
 * Hongcai Scholarship of Peking University
@@ -49,18 +49,18 @@ redirect_from:
 * Peking University May Fourth Scholarship (only 2 students in the entire school)
 * Model Student of Peking University (Top 5%)
 
-# Publications
+## Publications
 
 <ul>{% assign sorted_publications = site.publications | sort: 'title' | reverse %}{% for post in sorted_publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
-# Services
+## Services
 
 * Reviewer of IROS 2026.
 * Reviewer of IJCNN 2026.
 
-# Skills
+## Skills
 
 * Programming: Python, C/C++, CUDA, Triton, Shell, HTML, Matlab, Verilog, Assembly Language
 * Language: English
