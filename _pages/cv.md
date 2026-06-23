@@ -191,7 +191,8 @@ redirect_from:
   <h2><i class="fa-solid fa-cogs"></i> Skills</h2>
 
   <ul class="cv-grid">
-    <li><strong>Languages:</strong> Python, C/C++, CUDA, Triton, Shell, HTML, Matlab, Verilog, Assembly</li>
-    <li><strong>Spoken:</strong> English (Fluent)</li>
+    <li><strong>Languages:</strong> Python, C/C++, CUDA, Triton, Shell, HTML, Matlab, Verilog, Assembly </li>
+    <li><strong>Tools:</strong> Latex, Overleaf, Markdown, SPSS, VCS, Verdi, Virtuoso, DC </li>
+    <li><strong>Spoken:</strong> English (Fluent) </li>
   </ul>
 </div>
