@@ -8,4 +8,5 @@ venue: '2026 Design, Automation & Test in Europe Conference (DATE)'
 slidesurl: 'http://zhengzihaoPKU.github.io/files/DATE_2026_DynaMo/DynaMo-ppt.pdf'
 paperurl: 'http://zhengzihaoPKU.github.io/files/DATE_2026_DynaMo/DynaMo.pdf'
 bibtexurl: 'http://zhengzihaoPKU.github.io/files/DATE_2026_DynaMo/DynaMo.bib'
+image: 'http://zhengzihaoPKU.github.io/files/DATE_2026_DynaMo/fig1.pdf'
 ---
