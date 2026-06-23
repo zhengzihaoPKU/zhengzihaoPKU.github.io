@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Zihao Zheng's Personal Web"
+title                    : "Home"
 title_separator          : "-"
 name                     : &name "Zihao Zheng"
 description              : &description "personal description"
@@ -25,9 +25,9 @@ author:
   avatar           : "avatar.png"
   name             : "Zihao Zheng"
   pronouns         : # URL
-  bio              : "PhD student in PKU, focus on MLsys, HW/SW co-design, and EDA."
-  location         : "Beijing"
-  employer         : "Peking University"
+  bio              : "PhD student in PKU, focus on Physical Intelligence, AIsys, and System Design Automation."
+# location         : "Beijing"
+  employer         : "Peking University, Beijing"
   uri              : # URL
   email            : "zhengzihao@stu.pku.edu.cn"
   zhihu            : "https://www.zhihu.com/people/zi-hao-31-90"
