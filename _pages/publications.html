@@ -47,6 +47,15 @@ author_profile: true
     color: #666;
     margin-bottom: 0.4em;
   }
+  .pub-preview {
+    margin: 0.6em 0;
+  }
+  .pub-preview img {
+    max-width: 100%;
+    max-height: 280px;
+    border-radius: 4px;
+    border: 1px solid #eee;
+  }
   .pub-links {
     display: flex;
     flex-wrap: wrap;
@@ -132,6 +141,11 @@ author_profile: true
           <a href="{{ base_path }}{{ post.url }}">{{ post.title | remove_first: '[' | remove_first: 'C' | remove_first: 'J' | split: ']' | last | strip }}</a>
         </div>
         <div class="pub-venue">{{ post.venue }}, {{ post.date | date: "%Y" }}</div>
+        {% if post.image %}
+          <div class="pub-preview">
+            <img src="{% if post.image contains '://' %}{{ post.image }}{% else %}{{ post.image | prepend: base_path }}{% endif %}" alt="{{ post.title }}">
+          </div>
+        {% endif %}
         <div class="pub-links">
           {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pdf-link"><i class="fa-solid fa-file-pdf"></i> Paper</a>{% endif %}
           {% if post.slidesurl %}<a href="{{ post.slidesurl }}" class="slides-link"><i class="fa-solid fa-display"></i> Slides</a>{% endif %}
@@ -150,6 +164,11 @@ author_profile: true
     <div class="pub-card">
       <div class="pub-title"><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a></div>
       <div class="pub-venue">{{ post.venue }}, {{ post.date | date: "%Y" }}</div>
+      {% if post.image %}
+        <div class="pub-preview">
+          <img src="{% if post.image contains '://' %}{{ post.image }}{% else %}{{ post.image | prepend: base_path }}{% endif %}" alt="{{ post.title }}">
+        </div>
+      {% endif %}
       <div class="pub-links">
         {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pdf-link"><i class="fa-solid fa-file-pdf"></i> Paper</a>{% endif %}
         {% if post.slidesurl %}<a href="{{ post.slidesurl }}" class="slides-link"><i class="fa-solid fa-display"></i> Slides</a>{% endif %}
