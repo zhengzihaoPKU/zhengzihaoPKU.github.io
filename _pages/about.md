@@ -6,14 +6,13 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
 I'm a Ph.D student from [School of Computer Science](https://cs.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/). My research interest includes Physical Intelligence, AI system, System Design Automation (SDA) and Computer Architecture. I am very fortunate to be advised by [Prof. Xiang Chen](https://cs.pku.edu.cn/info/1092/2864.htm) of [Intelligence Fusion Lab (IF-Lab)](https://if-lab-pku.github.io/) from [School of Computer Science](https://cs.pku.edu.cn/), Peking University.
 
 I completed my master's degree at [MemLab, Peking University](https://www.pkumemlab.com), with my research focusing on in-memory computing and computer architecture. I was fortunate to receive guidance from [Prof. Yimao Cai](https://ic.pku.edu.cn/szdw/zzjs/jcwndzx1/cym/index.htm) and [Prof. Ling Liang](https://ic.pku.edu.cn/szdw/zzjs/jcwndzx1/ll/index.htm).
 
 ---
 
-# 🔥News
+# News
 
 ## 2026
 
