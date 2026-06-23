@@ -65,16 +65,6 @@ author_profile: true
     color: #2b7ec1;
   }
 
-  @media (prefers-color-scheme: dark) {
-    .research-intro {
-      background: #1a1a1a;
-      border-left-color: #52adc8;
-    }
-    .research-card { background: #1e1e1e; border-color: #333; }
-    .research-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.3); }
-    .research-card p { color: #aaa; }
-    .research-tags span { background: #1a2a3a; color: #70b0e0; }
-  }
 </style>
 
 <div class="research-intro">

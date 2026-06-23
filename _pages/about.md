@@ -65,13 +65,7 @@ redirect_from:
   .tag-award { background: #fef3e2; color: #c17b2b; }
   .tag-talk { background: #e8f8e8; color: #2b7e2b; }
 
-  @media (prefers-color-scheme: dark) {
-    .news-item:hover { background: #1a1a1a; }
-    .news-date { background: #2a2a2a; color: #aaa; }
-    .tag-paper { background: #1a2a3a; color: #70b0e0; }
-    .tag-award { background: #2a2218; color: #d0a060; }
-    .tag-talk { background: #182a18; color: #70b070; }
-  }
+
 </style>
 
 <div class="intro-text">

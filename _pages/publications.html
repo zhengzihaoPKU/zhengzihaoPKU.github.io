@@ -103,22 +103,6 @@ author_profile: true
   .tag-conf { background: #e8f4fd; color: #2b7ec1; }
   .tag-journal { background: #fef3e2; color: #c17b2b; }
 
-  @media (prefers-color-scheme: dark) {
-    .pub-card { background: #1e1e1e; border-left-color: #52adc8; }
-    .pub-card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.4); }
-    .pub-venue { color: #aaa; }
-    .pub-citation { color: #777; }
-    .pub-links a { border-color: #444; color: #aaa; }
-    .pub-links a:hover { border-color: #52adc8; color: #52adc8; background: #1a2a30; }
-    .pub-links .pdf-link { border-color: #a04030; color: #e08070; }
-    .pub-links .pdf-link:hover { background: #2a1a18; }
-    .pub-links .slides-link { border-color: #3070a0; color: #70a0d0; }
-    .pub-links .slides-link:hover { background: #18202a; }
-    .pub-links .bib-link { border-color: #408040; color: #70b070; }
-    .pub-links .bib-link:hover { background: #182a18; }
-    .tag-conf { background: #1a2a3a; color: #70b0e0; }
-    .tag-journal { background: #2a2218; color: #d0a060; }
-  }
 </style>
 
 {% assign sorted_publications = site.publications | sort: 'title' | reverse %}

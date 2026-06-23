@@ -80,15 +80,7 @@ redirect_from:
     border-left: 3px solid #f0ad4e;
     font-size: 0.92em;
   }
-  @media (prefers-color-scheme: dark) {
-    .cv-item-title { color: #ddd; }
-    .cv-item-sub { color: #aaa; }
-    .cv-item-desc { color: #999; }
-    .cv-badge { background: #333; color: #ccc; }
-    .cv-grid li { background: #2a2a2a; }
-    .cv-honor { background: #2a2a2a; border-left-color: #f0ad4e; }
-    .cv-item { border-left-color: #444; }
-  }
+
 </style>
 
 <div class="cv-section">
