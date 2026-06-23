@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/2026-IJCNN
 date: 2026-06-24
-venue: '2026 IJCNN'
+venue: 'International Joint Conference on Neural Networks (IJCNN)'
 paperurl: 'https://zhengzihaoPKU.github.io/files/IJCNN_2026_RoboECC/RoboECC.pdf'
 bibtexurl: 'https://zhengzihaoPKU.github.io/files/IJCNN_2026_RoboECC/RoboECC.bib'
 image: 'https://zhengzihaoPKU.github.io/files/IJCNN_2026_RoboECC/teaser.jpg'
