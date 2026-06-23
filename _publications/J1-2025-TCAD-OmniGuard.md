@@ -7,5 +7,5 @@ date: 2025-12-01
 venue: 'Journal'
 paperurl: 'https://zhengzihaoPKU.github.io/files/TCAD_2025_OmniGuard/OmniGuard.pdf'
 bibtexurl: 'https://zhengzihaoPKU.github.io/files/TCAD_2025_OmniGuard/OmniGuard.bib'
-image: 'https://zhengzihaoPKU.github.io/files/TCAD_2025_OmniGuard/teaser.pdf'
+image: 'https://zhengzihaoPKU.github.io/files/TCAD_2025_OmniGuard/teaser.jpg'
 ---

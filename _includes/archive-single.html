@@ -32,13 +32,7 @@
         {% assign preview_url = preview_url | prepend: base_path %}
       {% endunless %}
       <div class="archive__item-teaser" style="margin-bottom: 0.5em;">
-        {% if post.image contains '.pdf' %}
-          <a href="{{ preview_url }}" target="_blank" style="display: inline-block; padding: 0.5em 1em; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; color: #555;">
-            <i class="fa fa-file-pdf-o" aria-hidden="true"></i> View Figure
-          </a>
-        {% else %}
-          <img src="{{ preview_url }}" alt="{{ post.title }}" style="max-width: 100%; height: auto; border-radius: 4px;">
-        {% endif %}
+        <img src="{{ preview_url }}" alt="{{ post.title }}" style="max-width: 100%; height: auto; border-radius: 4px;">
       </div>
     {% endif %}
 
