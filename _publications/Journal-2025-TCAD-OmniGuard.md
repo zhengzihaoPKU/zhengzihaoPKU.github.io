@@ -4,7 +4,7 @@ collection: publications
 category: Journals
 permalink: /publication/2025-TCAD
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2026.04
+date: 2026
 venue: 'Journal'
 slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'http://academicpages.github.io/files/paper1.pdf'
