@@ -3,7 +3,6 @@ title: "[J1] OmniGuard: Two-level Protection Framework for RRAM-based Accelerato
 collection: publications
 category: Journals
 permalink: /publication/2025-TCAD
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 date: 2025-12-01
 venue: 'Journal'
 paperurl: 'http://zhengzihaoPKU.github.io/files/TCAD_2025_OmniGuard/OmniGuard.pdf'
