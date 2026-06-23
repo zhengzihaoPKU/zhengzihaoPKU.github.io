@@ -19,4 +19,4 @@ bibtexurl: '@misc{zheng2026dynamoruntimeswitchablequantization,
 }'
 citation: 'Author(s). (2026). "DynaMo." <i>Conference Name</i>.'
 ---
-Paper abstract goes here.
+![1782181238084](image/Conference-2026-DATE-DynaMo/1782181238084.png)![1782181283130](image/Conference-2026-DATE-DynaMo/1782181283130.png)
