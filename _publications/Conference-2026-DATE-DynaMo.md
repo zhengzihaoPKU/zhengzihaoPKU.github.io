@@ -2,7 +2,7 @@
 title: "DynaMo"
 collection: publications
 category: conferences
-permalink: /publication/Conference-2026-DATE-DynaMo
+permalink: /publication/2026-DATE
 excerpt: 'DynaMo: Runtime Switchable Quantization for MoE with Cross-Dataset Adaptation'
 date: 2026
 venue: 'DATE 2026'

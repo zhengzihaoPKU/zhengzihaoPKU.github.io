@@ -2,7 +2,7 @@
 title: "Paper Title Number 1"
 collection: publications
 category: Journals
-permalink: /publication/Journal-2025-TCAD-OmniGuard
+permalink: /publication/2025-TCAD
 excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
 date: 2026.04
 venue: 'Journal'
