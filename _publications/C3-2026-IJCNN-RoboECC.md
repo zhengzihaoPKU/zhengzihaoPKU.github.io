@@ -5,7 +5,7 @@ category: conferences
 permalink: /publication/2026-IJCNN
 date: 2026-06-24
 venue: '2026 IJCNN'
-paperurl: 'http://zhengzihaoPKU.github.io/files/IJCNN_2026_RoboECC/RoboECC.pdf'
-bibtexurl: 'http://zhengzihaoPKU.github.io/files/IJCNN_2026_RoboECC/RoboECC.bib'
-image: 'http://zhengzihaoPKU.github.io/files/IJCNN_2026_RoboECC/teaser.pdf'
+paperurl: 'https://zhengzihaoPKU.github.io/files/IJCNN_2026_RoboECC/RoboECC.pdf'
+bibtexurl: 'https://zhengzihaoPKU.github.io/files/IJCNN_2026_RoboECC/RoboECC.bib'
+image: 'https://zhengzihaoPKU.github.io/files/IJCNN_2026_RoboECC/teaser.pdf'
 ---
