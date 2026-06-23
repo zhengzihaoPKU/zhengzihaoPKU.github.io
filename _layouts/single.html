@@ -51,7 +51,10 @@ layout: default
         {% endunless %}
         <div style="text-align: center; margin-bottom: 1em;">
           {% if page.image contains '.pdf' %}
-            <embed src="{{ preview_url }}" type="application/pdf" style="width: 100%; max-width: 720px; height: 500px; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <iframe src="{{ preview_url }}" style="width: 100%; max-width: 720px; height: 500px; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+              <p>Your browser does not support PDF preview. <a href="{{ preview_url }}" target="_blank">Download PDF</a></p>
+            </iframe>
+            <p style="font-size: 0.9em; margin-top: 0.3em;"><a href="{{ preview_url }}" target="_blank">Open PDF in new tab</a></p>
           {% else %}
             <img src="{{ preview_url }}" alt="{{ page.title }}" style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
           {% endif %}
