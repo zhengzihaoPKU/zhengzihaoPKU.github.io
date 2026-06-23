@@ -6,7 +6,6 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-
 {% include base_path %}
 
 <style>
@@ -95,19 +94,19 @@ redirect_from:
 <div class="cv-section">
   <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
 
-  <div class="cv-item">
+<div class="cv-item">
     <div class="cv-item-title"><img src="{{ base_path }}/images/pku.jpg" class="school-logo" alt="PKU"> Ph.D in Computer Science <span class="cv-badge">2025 – 2029 (expected)</span></div>
     <div class="cv-item-sub">School of Computer Science, Peking University</div>
-    <div class="cv-item-desc">Major: Computer Architecture &nbsp;|&nbsp; Advisor: Prof. Xiang Chen, Prof. Hong Mei</div>
+    <div class="cv-item-desc">Major: Computer Architecture  |  Advisor: Prof. Xiang Chen, Prof. Hong Mei</div>
   </div>
 
-  <div class="cv-item">
+<div class="cv-item">
     <div class="cv-item-title"><img src="{{ base_path }}/images/pku.jpg" class="school-logo" alt="PKU"> M.S. in Electronic Information <span class="cv-badge">2022 – 2025</span></div>
     <div class="cv-item-sub">School of Software and Microelectronics, Peking University</div>
     <div class="cv-item-desc">Advisor: Prof. Ling Liang, Prof. Yimao Cai</div>
   </div>
 
-  <div class="cv-item">
+<div class="cv-item">
     <div class="cv-item-title"><img src="{{ base_path }}/images/bjtu.jpg" class="school-logo" alt="BJTU"> B.S. in Electrical Engineering and Automation <span class="cv-badge">2018 – 2022</span></div>
     <div class="cv-item-sub">School of Electrical Engineering, Beijing Jiaotong University</div>
   </div>
@@ -116,41 +115,41 @@ redirect_from:
 <div class="cv-section">
   <h2><i class="fa-solid fa-flask"></i> Research Projects</h2>
 
-  <div class="cv-item">
+<div class="cv-item">
     <div class="cv-item-title">Post-training Strategy and Cluster Service Architecture of Composable Generalizable Embodied AI Models</div>
     <div class="cv-item-sub"><span class="cv-tag">Partner</span> Beijing Municipal Science and Technology Commission</div>
   </div>
 
-  <div class="cv-item">
+<div class="cv-item">
     <div class="cv-item-title">High-Performance Collaborative Optimization of Edge Heterogeneous Computing Systems for Multimodal Intelligence</div>
     <div class="cv-item-sub"><span class="cv-tag">Partner</span> Beijing Municipal Science and Technology Commission, BAAI</div>
   </div>
 
-  <div class="cv-item">
+<div class="cv-item">
     <div class="cv-item-title">Major Project of Beijing High-end and Cutting-edge Industry Development Fund — Intelligent Ubiquitous Operating System</div>
     <div class="cv-item-sub"><span class="cv-tag">Partner</span> Beijing Municipal Science and Technology Commission, Beijing Tongminghu Research Institute</div>
   </div>
 
-  <div class="cv-item">
+<div class="cv-item">
     <div class="cv-item-title">Research on Embodied Intelligence Inference Acceleration Technology Based on Feature Cache</div>
     <div class="cv-item-sub"><span class="cv-tag">Partner</span> ZTE Corporation</div>
   </div>
 
-  <div class="cv-item">
+<div class="cv-item">
     <div class="cv-item-title">Innovations in Computing Systems for Quantized Deployment of MoE Mixture-of-Experts Architectures</div>
     <div class="cv-item-sub"><span class="cv-tag">Partner</span> Huawei Computing Center</div>
   </div>
 
-  <div class="cv-item">
+<div class="cv-item">
     <div class="cv-item-title">Research on Acceleration Methods and Systems for Multimodal Reasoning</div>
-    <div class="cv-item-sub"><span class="cv-tag">Partner</span> Huawei Nova Labs</div>
+    <div class="cv-item-sub"><span class="cv-tag">Partner</span> Huawei Noah's Ark Lab</div>
   </div>
 </div>
 
 <div class="cv-section">
   <h2><i class="fa-solid fa-briefcase"></i> Work Experience</h2>
 
-  <div class="cv-item">
+<div class="cv-item">
     <div class="cv-item-title">Research Intern — AIoT <span class="cv-badge">2024.01 – 2024.07</span></div>
     <div class="cv-item-sub"><img src="{{ base_path }}/images/thu.jpg" class="school-logo" alt="THU"> Institute for AI Industry Research (AIR), Tsinghua University</div>
     <div class="cv-item-desc">Advisor: Prof. Yuanchun Li, Prof. Yunxin Liu</div>
@@ -161,7 +160,7 @@ redirect_from:
 <div class="cv-section">
   <h2><i class="fa-solid fa-trophy"></i> Honors & Awards</h2>
 
-  <div class="cv-honor">🏆 President's Scholarship of Peking University <span style="color:#999;font-size:0.85em;">(Top university scholarship, only 2 recipients in the grade)</span></div>
+<div class="cv-honor">🏆 President's Scholarship of Peking University <span style="color:#999;font-size:0.85em;">(Top university scholarship, only 2 recipients in the grade)</span></div>
   <div class="cv-honor">🏆 Hongcai Scholarship of Peking University</div>
   <div class="cv-honor">🏆 Excellent Graduate of Beijing Municipality <span style="color:#999;font-size:0.85em;">(Top 2%)</span></div>
   <div class="cv-honor">🏆 Peking University Outstanding Graduate <span style="color:#999;font-size:0.85em;">(Top 3%)</span></div>
@@ -172,7 +171,7 @@ redirect_from:
 <div class="cv-section">
   <h2><i class="fa-solid fa-file-alt"></i> Publications</h2>
 
-  <ul>{% assign sorted_publications = site.publications | sort: 'title' | reverse %}{% for post in sorted_publications %}
+<ul>{% assign sorted_publications = site.publications | sort: 'title' | reverse %}{% for post in sorted_publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 </div>
@@ -180,7 +179,7 @@ redirect_from:
 <div class="cv-section">
   <h2><i class="fa-solid fa-handshake"></i> Academic Service</h2>
 
-  <div class="cv-item">
+<div class="cv-item">
     <div class="cv-item-sub">Reviewer of IROS 2026</div>
   </div>
   <div class="cv-item">
@@ -191,7 +190,7 @@ redirect_from:
 <div class="cv-section">
   <h2><i class="fa-solid fa-cogs"></i> Skills</h2>
 
-  <ul class="cv-grid">
+<ul class="cv-grid">
     <li><strong>Languages:</strong> Python, C/C++, CUDA, Triton, Shell, HTML, Matlab, Verilog, Assembly </li>
     <li><strong>Tools:</strong> Latex, Overleaf, Markdown, SPSS, VCS, Verdi, Virtuoso, DC </li>
     <li><strong>Spoken:</strong> English (Fluent) </li>
