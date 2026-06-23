@@ -1,5 +1,5 @@
 ---
-title: "[C1] DynaMo: Runtime Switchable Quantization for MoE with Cross-Dataset Adaptation"
+title: "[C2] KERV"
 collection: publications
 category: conferences
 permalink: /publication/2026-DATE
