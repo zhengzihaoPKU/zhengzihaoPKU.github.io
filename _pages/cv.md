@@ -41,6 +41,15 @@ redirect_from:
     margin-top: 0.15em;
     padding-left: 0.5em;
   }
+  .cv-item .school-logo {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-right: 0.4em;
+    border: 1px solid #e0e0e0;
+  }
   .cv-tag {
     display: inline-block;
     background: #52adc8;
@@ -87,19 +96,19 @@ redirect_from:
   <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
 
   <div class="cv-item">
-    <div class="cv-item-title">Ph.D in Computer Science <span class="cv-badge">2025 – 2029 (expected)</span></div>
+    <div class="cv-item-title"><img src="{{ base_path }}/images/pku.jpg" class="school-logo" alt="PKU"> Ph.D in Computer Science <span class="cv-badge">2025 – 2029 (expected)</span></div>
     <div class="cv-item-sub">School of Computer Science, Peking University</div>
     <div class="cv-item-desc">Major: Computer Architecture &nbsp;|&nbsp; Advisor: Prof. Xiang Chen, Prof. Hong Mei</div>
   </div>
 
   <div class="cv-item">
-    <div class="cv-item-title">M.S. in Electronic Information <span class="cv-badge">2022 – 2025</span></div>
+    <div class="cv-item-title"><img src="{{ base_path }}/images/pku.jpg" class="school-logo" alt="PKU"> M.S. in Electronic Information <span class="cv-badge">2022 – 2025</span></div>
     <div class="cv-item-sub">School of Software and Microelectronics, Peking University</div>
     <div class="cv-item-desc">Advisor: Prof. Ling Liang, Prof. Yimao Cai</div>
   </div>
 
   <div class="cv-item">
-    <div class="cv-item-title">B.S. in Electrical Engineering and Automation <span class="cv-badge">2018 – 2022</span></div>
+    <div class="cv-item-title"><img src="{{ base_path }}/images/bjtu.jpg" class="school-logo" alt="BJTU"> B.S. in Electrical Engineering and Automation <span class="cv-badge">2018 – 2022</span></div>
     <div class="cv-item-sub">School of Electrical Engineering, Beijing Jiaotong University</div>
   </div>
 </div>
@@ -143,7 +152,7 @@ redirect_from:
 
   <div class="cv-item">
     <div class="cv-item-title">Research Intern — AIoT <span class="cv-badge">2024.01 – 2024.07</span></div>
-    <div class="cv-item-sub">Institute for AI Industry Research (AIR), Tsinghua University</div>
+    <div class="cv-item-sub"><img src="{{ base_path }}/images/thu.jpg" class="school-logo" alt="THU"> Institute for AI Industry Research (AIR), Tsinghua University</div>
     <div class="cv-item-desc">Advisor: Prof. Yuanchun Li, Prof. Yunxin Liu</div>
     <div class="cv-item-desc">Topics: Hardware-Friendly Neural Networks, LLM Inference Optimization on Device</div>
   </div>
