@@ -80,6 +80,11 @@ redirect_from:
   <div class="news-year">2026</div>
 
   <div class="news-item">
+    <span class="news-date">2026-07</span>
+    <span class="news-text"><span class="tag tag-paper">Paper</span> Two paper are accepted by <strong>MM 2026</strong>!</span>
+  </div>
+
+  <div class="news-item">
     <span class="news-date">2026-06</span>
     <span class="news-text"><span class="tag tag-paper">Paper</span> One paper is accepted by <strong>ECCV 2026</strong>!</span>
   </div>
