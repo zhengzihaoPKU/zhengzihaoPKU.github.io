@@ -6,7 +6,6 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
 <style>
   .intro-text {
     font-size: 1.05em;
@@ -71,20 +70,23 @@ redirect_from:
 <div class="intro-text">
   <p>I'm a Ph.D student from <a href="https://cs.pku.edu.cn/" class="highlight-link">School of Computer Science</a>, <a href="https://www.pku.edu.cn/" class="highlight-link">Peking University</a>. My research interest includes Physical Intelligence, AI system, System Design Automation (SDA) and Computer Architecture. I am very fortunate to be advised by <a href="https://cs.pku.edu.cn/info/1092/2864.htm" class="highlight-link">Prof. Xiang Chen</a> of <a href="https://if-lab-pku.github.io/" class="highlight-link">Intelligence Fusion Lab (IF-Lab)</a> from School of Computer Science, Peking University.</p>
 
-  <p>I completed my master's degree at <a href="https://www.pkumemlab.com" class="highlight-link">MemLab, Peking University</a>, with my research focusing on in-memory computing and computer architecture. I was fortunate to receive guidance from <a href="https://ic.pku.edu.cn/szdw/zzjs/jcwndzx1/cym/index.htm" class="highlight-link">Prof. Yimao Cai</a> and <a href="https://ic.pku.edu.cn/szdw/zzjs/jcwndzx1/ll/index.htm" class="highlight-link">Prof. Ling Liang</a>.</p>
+<p>I completed my master's degree at <a href="https://www.pkumemlab.com" class="highlight-link">MemLab, Peking University</a>, with my research focusing on in-memory computing and computer architecture. I was fortunate to receive guidance from <a href="https://ic.pku.edu.cn/szdw/zzjs/jcwndzx1/cym/index.htm" class="highlight-link">Prof. Yimao Cai</a> and <a href="https://ic.pku.edu.cn/szdw/zzjs/jcwndzx1/ll/index.htm" class="highlight-link">Prof. Ling Liang</a>.</p>
 </div>
 
 <div class="news-section">
   <h2><i class="fa-solid fa-newspaper"></i> News</h2>
 
-  <div class="news-year">2026</div>
+<div class="news-year">2026</div>
 
-  <div class="news-item">
+<div class="news-item">
+    <span class="news-date">2026-07</span>
+    <span class="news-text"><span class="tag tag-paper">Paper</span> One paper are accepted by <strong>CHIP 2026</strong>!</span>
+  </div>
+<div class="news-item">
     <span class="news-date">2026-07</span>
     <span class="news-text"><span class="tag tag-paper">Paper</span> Two paper are accepted by <strong>MM 2026</strong>!</span>
   </div>
-
-  <div class="news-item">
+<div class="news-item">
     <span class="news-date">2026-06</span>
     <span class="news-text"><span class="tag tag-paper">Paper</span> One paper is accepted by <strong>ECCV 2026</strong>!</span>
   </div>
@@ -121,9 +123,9 @@ redirect_from:
     <span class="news-text"><span class="tag tag-paper">Paper</span> Two papers are accepted by <strong>ISCAS 2026</strong>!</span>
   </div>
 
-  <div class="news-year">2025</div>
+<div class="news-year">2025</div>
 
-  <div class="news-item">
+<div class="news-item">
     <span class="news-date">2025-12</span>
     <span class="news-text"><span class="tag tag-paper">Paper</span> One paper about secure RRAM accelerators is accepted by <strong>TCAD</strong>!</span>
   </div>
@@ -144,9 +146,9 @@ redirect_from:
     <span class="news-text"><span class="tag tag-paper">Paper</span> One paper about RRAM programming is accepted by <strong>MLCAD 2025</strong>!</span>
   </div>
 
-  <div class="news-year">2024</div>
+<div class="news-year">2024</div>
 
-  <div class="news-item">
+<div class="news-item">
     <span class="news-date">2024-09</span>
     <span class="news-text"><span class="tag tag-paper">Paper</span> One paper is accepted by <strong>NeurIPS 2024</strong>!</span>
   </div>
