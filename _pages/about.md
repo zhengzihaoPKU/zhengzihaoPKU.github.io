@@ -61,6 +61,7 @@ redirect_from:
     margin-right: 0.3em;
   }
   .tag-paper { background: #e8f4fd; color: #2b7ec1; }
+  .tag-project { background: #fde8f9; color: #b24bee; }
   .tag-award { background: #fef3e2; color: #c17b2b; }
   .tag-talk { background: #e8f8e8; color: #2b7e2b; }
 
@@ -78,6 +79,10 @@ redirect_from:
 
 <div class="news-year">2026</div>
 
+<div class="news-item">
+    <span class="news-date">2026-08</span>
+    <span class="news-text"><span class="tag tag-project">Project</span> The <strong> Embodied Intelligence OS </strong> (<strong> <a href="https://robonix.ai"> Robonix </a> </strong>) I contributed to has been released!</span>
+  </div>
 <div class="news-item">
     <span class="news-date">2026-07</span>
     <span class="news-text"><span class="tag tag-paper">Paper</span> One paper are accepted by <strong>CHIP 2026</strong>!</span>
