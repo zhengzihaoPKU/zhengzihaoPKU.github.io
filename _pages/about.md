@@ -81,7 +81,7 @@ redirect_from:
 
 <div class="news-item">
     <span class="news-date">2026-08</span>
-    <span class="news-text"><span class="tag tag-project">Project</span> The <strong> Embodied Intelligence OS </strong> (<strong> <a href="https://robonix.ai"> Robonix </a> </strong>) I contributed to has been released!</span>
+    <span class="news-text"><span class="tag tag-project">Project</span> Our <strong> Embodied Intelligence OS </strong> (<strong> <a href="https://robonix.ai"> Robonix </a> </strong>) is released in ChinaOSC!</span>
   </div>
 <div class="news-item">
     <span class="news-date">2026-07</span>
