@@ -113,7 +113,7 @@ redirect_from:
   </div>
   <div class="news-item">
     <span class="news-date">2026-03</span>
-    <span class="news-text">The <a href="https://gitlink.org.cn/zone/uos/source/292">white paper on EAI OS</a> that I co-authored has been released!</span>
+    <span class="news-text"><span class="tag tag-project">Project</span>The <a href="https://gitlink.org.cn/zone/uos/source/292">white paper on EAI OS</a> that I co-authored has been released!</span>
   </div>
   <div class="news-item">
     <span class="news-date">2026-02</span>
