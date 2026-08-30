@@ -85,6 +85,8 @@ author_profile: true
   .pub-links .slides-link:hover { background: #f0f5fd; }
   .pub-links .bib-link { border-color: #6ba86b; color: #6ba86b; }
   .pub-links .bib-link:hover { background: #f0f8f0; }
+  .pub-links .code-link { border-color: #555; color: #555; }
+  .pub-links .code-link:hover { background: #f3f3f3; }
   .pub-citation {
     font-size: 0.82em;
     color: #999;
@@ -134,6 +136,7 @@ author_profile: true
           {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pdf-link"><i class="fa-solid fa-file-pdf"></i> Paper</a>{% endif %}
           {% if post.slidesurl %}<a href="{{ post.slidesurl }}" class="slides-link"><i class="fa-solid fa-display"></i> Slides</a>{% endif %}
           {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}" class="bib-link"><i class="fa-solid fa-quote-right"></i> BibTeX</a>{% endif %}
+          {% if post.codeurl %}<a href="{{ post.codeurl }}" class="code-link"><i class="fa-brands fa-github"></i> Code</a>{% endif %}
         </div>
         {% if post.citation %}
           <div class="pub-citation">{{ post.citation }}</div>
@@ -157,10 +160,10 @@ author_profile: true
         {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pdf-link"><i class="fa-solid fa-file-pdf"></i> Paper</a>{% endif %}
         {% if post.slidesurl %}<a href="{{ post.slidesurl }}" class="slides-link"><i class="fa-solid fa-display"></i> Slides</a>{% endif %}
         {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}" class="bib-link"><i class="fa-solid fa-quote-right"></i> BibTeX</a>{% endif %}
+        {% if post.codeurl %}<a href="{{ post.codeurl }}" class="code-link"><i class="fa-brands fa-github"></i> Code</a>{% endif %}
       </div>
     </div>
   {% endfor %}
 {% endif %}
-
 
 

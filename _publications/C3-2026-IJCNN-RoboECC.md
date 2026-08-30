@@ -7,5 +7,6 @@ date: 2026-06-24
 venue: 'International Joint Conference on Neural Networks (IJCNN)'
 paperurl: 'https://zhengzihaoPKU.github.io/files/IJCNN_2026_RoboECC/RoboECC.pdf'
 bibtexurl: 'https://zhengzihaoPKU.github.io/files/IJCNN_2026_RoboECC/RoboECC.bib'
+codeurl: 'https://github.com/zhengzihaoPKU/RoboECC'
 image: 'https://zhengzihaoPKU.github.io/files/IJCNN_2026_RoboECC/teaser.jpg'
 ---
