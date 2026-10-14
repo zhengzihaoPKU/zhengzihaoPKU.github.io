@@ -81,7 +81,7 @@ redirect_from:
 
 <div class="news-item">
     <span class="news-date">2026-10</span>
-    <span class="news-text"><span class="tag tag-paper">Paper</span> One paper has been accepted to <strong>FRecSys</strong>, a workshop at <strong>ATC</strong>!</span>
+    <span class="news-text"><span class="tag tag-paper">Paper</span> One paper has been accepted to <strong>FRecSys</strong>, a workshop at <strong>ATC 2026</strong>!</span>
   </div>
 <div class="news-item">
     <span class="news-date">2026-08</span>
