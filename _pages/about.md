@@ -80,6 +80,10 @@ redirect_from:
 <div class="news-year">2026</div>
 
 <div class="news-item">
+    <span class="news-date">2026-10</span>
+    <span class="news-text"><span class="tag tag-paper">Paper</span> One paper has been accepted to <strong>FRecSys</strong>, a workshop at <strong>ATC</strong>!</span>
+  </div>
+<div class="news-item">
     <span class="news-date">2026-08</span>
     <span class="news-text"><span class="tag tag-project">Project</span> Our <strong> Embodied Intelligence OS </strong>(<strong><a href="https://robonix.ai">Robonix</a></strong>) is released in ChinaOSC!</span>
   </div>
