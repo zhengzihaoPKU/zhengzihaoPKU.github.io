@@ -171,7 +171,7 @@ redirect_from:
 <div class="cv-section">
   <h2><i class="fa-solid fa-file-alt"></i> Publications</h2>
 
-<ul>{% assign sorted_publications = site.publications | sort: 'title' | reverse %}{% for post in sorted_publications %}
+<ul>{% assign sorted_publications = site.publications | sort: 'date' | reverse %}{% for post in sorted_publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 </div>

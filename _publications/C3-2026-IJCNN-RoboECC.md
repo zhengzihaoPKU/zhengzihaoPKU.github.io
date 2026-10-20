@@ -5,6 +5,7 @@ category: conferences
 permalink: /publication/2026-IJCNN
 date: 2026-06-24
 venue: 'International Joint Conference on Neural Networks (IJCNN)'
+authors: "Zihao Zheng, Hangyu Cao, Jiayu Chen, Sicheng Tian, Chenyue Li, Maoliang Li, Xinhao Sun, Guojie Luo, Xiang Chen"
 paperurl: 'https://zhengzihaoPKU.github.io/files/IJCNN_2026_RoboECC/RoboECC.pdf'
 bibtexurl: 'https://zhengzihaoPKU.github.io/files/IJCNN_2026_RoboECC/RoboECC.bib'
 codeurl: 'https://github.com/zhengzihaoPKU/RoboECC'

@@ -5,6 +5,7 @@ category: Journals
 permalink: /publication/2025-TCAD
 date: 2025-12-01
 venue: 'IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems'
+authors: "Zihao Zheng, Ling Liang, Yunfan Yang, Jinlong Lin, Meng Li, Zongwei Wang, Yimao Cai"
 paperurl: 'https://zhengzihaoPKU.github.io/files/TCAD_2025_OmniGuard/OmniGuard.pdf'
 bibtexurl: 'https://zhengzihaoPKU.github.io/files/TCAD_2025_OmniGuard/OmniGuard.bib'
 image: 'https://zhengzihaoPKU.github.io/files/TCAD_2025_OmniGuard/teaser.jpg'

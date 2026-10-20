@@ -42,6 +42,11 @@ author_profile: true
   }
   .pub-title a { text-decoration: none; }
   .pub-title a:hover { text-decoration: underline; }
+  .pub-authors {
+    font-size: 0.88em;
+    line-height: 1.6;
+    margin-bottom: 0.25em;
+  }
   .pub-venue {
     font-size: 0.88em;
     color: #666;
@@ -107,7 +112,7 @@ author_profile: true
 
 </style>
 
-{% assign sorted_publications = site.publications | sort: 'title' | reverse %}
+{% assign sorted_publications = site.publications | sort: 'date' | reverse %}
 {% if site.publication_category %}
   {% for category in site.publication_category %}
     {% assign title_shown = false %}
@@ -120,13 +125,17 @@ author_profile: true
         {% assign title_shown = true %}
       {% endunless %}
 
-      {% assign pid = post.title | slice: 1, 1 %}
+      {% assign publication_label = post.title | split: ']' | first | remove_first: '[' %}
+      {% assign publication_title = post.title | split: '] ' | last %}
       <div class="pub-card">
         <div class="pub-title">
-          <span class="pub-type-tag {% if post.category == 'conferences' %}tag-conf{% else %}tag-journal{% endif %}">{{ post.title | slice: 1, 2 }}</span>
-          <a href="{{ base_path }}{{ post.url }}">{{ post.title | remove_first: '[' | remove_first: 'C' | remove_first: 'J' | split: ']' | last | strip }}</a>
+          <span class="pub-type-tag {% if post.category == 'conferences' %}tag-conf{% else %}tag-journal{% endif %}">{{ publication_label }}</span>
+          <a href="{{ base_path }}{{ post.url }}">{{ publication_title }}</a>
         </div>
-        <div class="pub-venue">{{ post.venue }}, {{ post.date | date: "%Y" }}</div>
+        {% if post.authors %}
+          <div class="pub-authors">{{ post.authors | escape | replace: 'Zihao Zheng', '<strong>Zihao Zheng</strong>' }}</div>
+        {% endif %}
+        <div class="pub-venue">{{ post.venue }}, {{ post.date | date: "%Y" }}{% if post.status == 'accepted' %} · Accepted{% endif %}</div>
         {% if post.image %}
           <div class="pub-preview">
             <img src="{% if post.image contains '://' %}{{ post.image }}{% else %}{{ post.image | prepend: base_path }}{% endif %}" alt="{{ post.title }}">
@@ -134,6 +143,7 @@ author_profile: true
         {% endif %}
         <div class="pub-links">
           {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pdf-link"><i class="fa-solid fa-file-pdf"></i> Paper</a>{% endif %}
+          {% if post.sourceurl and post.paperurl == nil %}<a href="{{ post.sourceurl }}"><i class="fa-solid fa-link"></i> Details</a>{% endif %}
           {% if post.slidesurl %}<a href="{{ post.slidesurl }}" class="slides-link"><i class="fa-solid fa-display"></i> Slides</a>{% endif %}
           {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}" class="bib-link"><i class="fa-solid fa-quote-right"></i> BibTeX</a>{% endif %}
           {% if post.codeurl %}<a href="{{ post.codeurl }}" class="code-link"><i class="fa-brands fa-github"></i> Code</a>{% endif %}
@@ -150,7 +160,10 @@ author_profile: true
   {% for post in sorted_publications %}
     <div class="pub-card">
       <div class="pub-title"><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a></div>
-      <div class="pub-venue">{{ post.venue }}, {{ post.date | date: "%Y" }}</div>
+      {% if post.authors %}
+        <div class="pub-authors">{{ post.authors | escape | replace: 'Zihao Zheng', '<strong>Zihao Zheng</strong>' }}</div>
+      {% endif %}
+      <div class="pub-venue">{{ post.venue }}, {{ post.date | date: "%Y" }}{% if post.status == 'accepted' %} · Accepted{% endif %}</div>
       {% if post.image %}
         <div class="pub-preview">
           <img src="{% if post.image contains '://' %}{{ post.image }}{% else %}{{ post.image | prepend: base_path }}{% endif %}" alt="{{ post.title }}">
@@ -158,6 +171,7 @@ author_profile: true
       {% endif %}
       <div class="pub-links">
         {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pdf-link"><i class="fa-solid fa-file-pdf"></i> Paper</a>{% endif %}
+        {% if post.sourceurl and post.paperurl == nil %}<a href="{{ post.sourceurl }}"><i class="fa-solid fa-link"></i> Details</a>{% endif %}
         {% if post.slidesurl %}<a href="{{ post.slidesurl }}" class="slides-link"><i class="fa-solid fa-display"></i> Slides</a>{% endif %}
         {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}" class="bib-link"><i class="fa-solid fa-quote-right"></i> BibTeX</a>{% endif %}
         {% if post.codeurl %}<a href="{{ post.codeurl }}" class="code-link"><i class="fa-brands fa-github"></i> Code</a>{% endif %}
