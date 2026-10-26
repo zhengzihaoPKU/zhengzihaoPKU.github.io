@@ -171,9 +171,16 @@ redirect_from:
 <div class="cv-section">
   <h2><i class="fa-solid fa-file-alt"></i> Publications</h2>
 
-<ul>{% assign sorted_publications = site.publications | sort: 'sort_key' | reverse %}{% for post in sorted_publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+{% assign sorted_publications = site.publications | sort: 'sort_key' | reverse %}
+{% for category in site.publication_category %}
+  {% assign category_publications = sorted_publications | where: 'category', category[0] %}
+  {% if category_publications.size > 0 %}
+    <h3>{{ category[1].title }}</h3>
+    <ul>{% for post in category_publications %}
+      {% include archive-single-cv.html %}
+    {% endfor %}</ul>
+  {% endif %}
+{% endfor %}
 </div>
 
 <div class="cv-section">

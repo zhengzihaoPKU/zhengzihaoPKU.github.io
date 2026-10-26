@@ -41,6 +41,11 @@
     {% elsif post.venue %}
       <p class="archive__item-excerpt" itemprop="description">{{ post.venue }}, {{ post.date | date: "%Y" }}{% if post.status == 'accepted' %} · Accepted{% endif %}</p>
     {% endif %}
+    {% if post.collection == 'publications' %}
+      <div class="publication-links">
+        {% include publication-links.html publication=post button_class="btn btn--small" %}
+      </div>
+    {% endif %}
     </li>
  </article>
 </div>
