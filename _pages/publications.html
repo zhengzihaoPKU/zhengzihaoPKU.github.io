@@ -9,8 +9,6 @@ author_profile: true
   <p style="margin-bottom: 1.5em;">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</p>
 {% endif %}
 
-{% include base_path %}
-
 <style>
   .pub-section { margin-bottom: 2.5em; }
   .pub-section h2 {
@@ -77,6 +75,8 @@ author_profile: true
     text-decoration: none;
     border: 1px solid #ddd;
     color: #555;
+    background: transparent;
+    margin-bottom: 0;
     transition: all 0.15s;
   }
   .pub-links a:hover {
@@ -112,72 +112,41 @@ author_profile: true
 
 </style>
 
-{% assign sorted_publications = site.publications | sort: 'date' | reverse %}
-{% if site.publication_category %}
-  {% for category in site.publication_category %}
-    {% assign title_shown = false %}
-    {% assign cat_key = category[0] %}
-    {% for post in sorted_publications %}
-      {% if post.category != cat_key %}{% continue %}{% endif %}
-      {% unless title_shown %}
-        <div class="pub-section">
-          <h2>{% if cat_key == 'conferences' %}<i class="fa-solid fa-microphone"></i>{% elsif cat_key == 'Journals' %}<i class="fa-solid fa-book"></i>{% endif %} {{ category[1].title }}</h2>
-        {% assign title_shown = true %}
-      {% endunless %}
+{% assign sorted_publications = site.publications | sort: 'sort_key' | reverse %}
+{% assign current_year = '' %}
+{% for post in sorted_publications %}
+  {% assign publication_year = post.date | date: '%Y' %}
+  {% if publication_year != current_year %}
+    {% unless forloop.first %}</div>{% endunless %}
+    <div class="pub-section">
+      <h2>{{ publication_year }}</h2>
+    {% assign current_year = publication_year %}
+  {% endif %}
 
-      {% assign publication_label = post.title | split: ']' | first | remove_first: '[' %}
-      {% assign publication_title = post.title | split: '] ' | last %}
-      <div class="pub-card">
-        <div class="pub-title">
-          <span class="pub-type-tag {% if post.category == 'conferences' %}tag-conf{% else %}tag-journal{% endif %}">{{ publication_label }}</span>
-          <a href="{{ base_path }}{{ post.url }}">{{ publication_title }}</a>
-        </div>
-        {% if post.authors %}
-          <div class="pub-authors">{{ post.authors | escape | replace: 'Zihao Zheng', '<strong>Zihao Zheng</strong>' }}</div>
-        {% endif %}
-        <div class="pub-venue">{{ post.venue }}, {{ post.date | date: "%Y" }}{% if post.status == 'accepted' %} · Accepted{% endif %}</div>
-        {% if post.image %}
-          <div class="pub-preview">
-            <img src="{% if post.image contains '://' %}{{ post.image }}{% else %}{{ post.image | prepend: base_path }}{% endif %}" alt="{{ post.title }}">
-          </div>
-        {% endif %}
-        <div class="pub-links">
-          {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pdf-link"><i class="fa-solid fa-file-pdf"></i> Paper</a>{% endif %}
-          {% if post.sourceurl and post.paperurl == nil %}<a href="{{ post.sourceurl }}"><i class="fa-solid fa-link"></i> Details</a>{% endif %}
-          {% if post.slidesurl %}<a href="{{ post.slidesurl }}" class="slides-link"><i class="fa-solid fa-display"></i> Slides</a>{% endif %}
-          {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}" class="bib-link"><i class="fa-solid fa-quote-right"></i> BibTeX</a>{% endif %}
-          {% if post.codeurl %}<a href="{{ post.codeurl }}" class="code-link"><i class="fa-brands fa-github"></i> Code</a>{% endif %}
-        </div>
-        {% if post.citation %}
-          <div class="pub-citation">{{ post.citation }}</div>
-        {% endif %}
-      </div>
-
-    {% endfor %}
-    {% if title_shown %}</div>{% endif %}
-  {% endfor %}
-{% else %}
-  {% for post in sorted_publications %}
-    <div class="pub-card">
-      <div class="pub-title"><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a></div>
-      {% if post.authors %}
-        <div class="pub-authors">{{ post.authors | escape | replace: 'Zihao Zheng', '<strong>Zihao Zheng</strong>' }}</div>
-      {% endif %}
-      <div class="pub-venue">{{ post.venue }}, {{ post.date | date: "%Y" }}{% if post.status == 'accepted' %} · Accepted{% endif %}</div>
-      {% if post.image %}
-        <div class="pub-preview">
-          <img src="{% if post.image contains '://' %}{{ post.image }}{% else %}{{ post.image | prepend: base_path }}{% endif %}" alt="{{ post.title }}">
-        </div>
-      {% endif %}
-      <div class="pub-links">
-        {% if post.paperurl %}<a href="{{ post.paperurl }}" class="pdf-link"><i class="fa-solid fa-file-pdf"></i> Paper</a>{% endif %}
-        {% if post.sourceurl and post.paperurl == nil %}<a href="{{ post.sourceurl }}"><i class="fa-solid fa-link"></i> Details</a>{% endif %}
-        {% if post.slidesurl %}<a href="{{ post.slidesurl }}" class="slides-link"><i class="fa-solid fa-display"></i> Slides</a>{% endif %}
-        {% if post.bibtexurl %}<a href="{{ post.bibtexurl }}" class="bib-link"><i class="fa-solid fa-quote-right"></i> BibTeX</a>{% endif %}
-        {% if post.codeurl %}<a href="{{ post.codeurl }}" class="code-link"><i class="fa-brands fa-github"></i> Code</a>{% endif %}
-      </div>
+  {% assign publication_label = post.title | split: ']' | first | remove_first: '[' %}
+  {% assign publication_title = post.title | split: '] ' | last %}
+  <div class="pub-card">
+    <div class="pub-title">
+      <span class="pub-type-tag {% if post.category == 'conferences' %}tag-conf{% else %}tag-journal{% endif %}">{{ publication_label }}</span>
+      <a href="{{ post.url | relative_url }}">{{ publication_title | escape }}</a>
     </div>
-  {% endfor %}
-{% endif %}
-
-
+    {% if post.authors %}
+      <div class="pub-authors">{{ post.authors | escape | replace: 'Zihao Zheng', '<strong>Zihao Zheng</strong>' }}</div>
+    {% endif %}
+    <div class="pub-venue">{{ post.venue | escape }} · {{ post.date | date: "%b %Y" }}{% if post.status == 'accepted' %} · Accepted{% endif %}</div>
+    {% if post.image %}
+      <div class="pub-preview">
+        <a href="{{ post.image | relative_url }}" aria-label="View full figure for {{ publication_title | escape }}">
+          <img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: publication_title | escape }}" loading="lazy">
+        </a>
+      </div>
+    {% endif %}
+    <div class="pub-links">
+      {% include publication-links.html publication=post %}
+    </div>
+    {% if post.citation %}
+      <div class="pub-citation">{{ post.citation }}</div>
+    {% endif %}
+  </div>
+  {% if forloop.last %}</div>{% endif %}
+{% endfor %}

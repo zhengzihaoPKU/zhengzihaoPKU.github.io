@@ -171,7 +171,7 @@ redirect_from:
 <div class="cv-section">
   <h2><i class="fa-solid fa-file-alt"></i> Publications</h2>
 
-<ul>{% assign sorted_publications = site.publications | sort: 'date' | reverse %}{% for post in sorted_publications %}
+<ul>{% assign sorted_publications = site.publications | sort: 'sort_key' | reverse %}{% for post in sorted_publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 </div>
@@ -180,6 +180,12 @@ redirect_from:
   <h2><i class="fa-solid fa-handshake"></i> Academic Service</h2>
 
 <div class="cv-item">
+    <div class="cv-item-sub">Reviewer of ICLR 2027</div>
+  </div>
+  <div class="cv-item">
+    <div class="cv-item-sub">Reviewer of ICRA 2026</div>
+  </div>
+  <div class="cv-item">
     <div class="cv-item-sub">Reviewer of IROS 2026</div>
   </div>
   <div class="cv-item">

@@ -1,0 +1,17 @@
+{% assign publication = include.publication %}
+{% if publication.pdfurl %}
+  <a href="{{ publication.pdfurl | relative_url }}" class="{{ include.button_class }} pdf-link"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i> PDF</a>
+{% elsif publication.paperurl %}
+  <a href="{{ publication.paperurl | relative_url }}" class="{{ include.button_class }} paper-link"><i class="fa-solid fa-link" aria-hidden="true"></i> Paper</a>
+{% elsif publication.sourceurl %}
+  <a href="{{ publication.sourceurl | relative_url }}" class="{{ include.button_class }} paper-link"><i class="fa-solid fa-link" aria-hidden="true"></i> Details</a>
+{% endif %}
+{% if publication.bibtexurl %}
+  <a href="{{ publication.bibtexurl | relative_url }}" class="{{ include.button_class }} bib-link"><i class="fa-solid fa-quote-right" aria-hidden="true"></i> BibTeX</a>
+{% endif %}
+{% if publication.slidesurl %}
+  <a href="{{ publication.slidesurl | relative_url }}" class="{{ include.button_class }} slides-link"><i class="fa-solid fa-display" aria-hidden="true"></i> Slides</a>
+{% endif %}
+{% if publication.codeurl %}
+  <a href="{{ publication.codeurl | relative_url }}" class="{{ include.button_class }} code-link"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+{% endif %}
