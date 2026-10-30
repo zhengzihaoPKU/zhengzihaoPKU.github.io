@@ -7,6 +7,8 @@ date: 2026-10-07
 venue: "IEEE International Conference on Systems, Man, and Cybernetics (SMC)"
 authors: "Zhaobo Zhang, Hangqi Ren, Yunlong Hou, Zihao Zheng, Donggang Cao"
 sourceurl: "https://conf.papercept.net/conferences/conferences/SMC26/program/SMC26_ContentListWeb_4.html"
+bibtexurl: "/files/SMC_2026_DOCENT/DOCENT.bib"
+bibtex_source: "https://conf.papercept.net/conferences/conferences/SMC26/program/SMC26_ContentListWeb_4.html"
 publication_year: 2026
 sort_key: "2026-10-07-C14"
 ---

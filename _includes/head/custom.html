@@ -21,15 +21,19 @@
 </script>
 
 <style>
-  #visitor-counter a {
-    font-size: 0.75em !important;
-    display: flex !important;
-    align-items: center !important;
-    gap: 0.3em !important;
+  #visitor-counter .visitor-counter__status {
+    font-size: 0.75em;
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+    margin: 0 0 0 1rem;
+    padding: 0.5rem 0;
+    color: var(--global-masthead-link-color);
+    font-variant-numeric: tabular-nums;
     opacity: 0.6;
     transition: opacity 0.2s;
   }
-  #visitor-counter a:hover { opacity: 1; }
+  #visitor-counter .visitor-counter__status:hover { opacity: 1; }
   #visitor-counter i { font-size: 0.85em; }
 </style>
 

@@ -15,8 +15,11 @@
             {% endif %}
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
-          <li class="masthead__menu-item persist" id="visitor-counter">
-            <a><i class="fa-solid fa-eye"></i> <span id="busuanzi_value_site_pv"></span></a>
+          <li class="masthead__menu-item persist tail" id="visitor-counter">
+            <span class="visitor-counter__status" role="status" aria-live="polite" aria-atomic="true" aria-label="Total page views unavailable" title="Total page views unavailable">
+              <i class="fa-solid fa-eye" aria-hidden="true"></i>
+              <span id="busuanzi_value_site_pv">—</span>
+            </span>
           </li>
         </ul>
         <ul class="hidden-links hidden"></ul>

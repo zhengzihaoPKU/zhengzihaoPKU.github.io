@@ -47,9 +47,9 @@ layout: default
       {% endunless %}
 
       {% if page.image %}
-        <div style="text-align: center; margin-bottom: 1em;">
+        <div{% if page.collection == 'publications' %} class="publication-preview"{% else %} style="text-align: center; margin-bottom: 1em;"{% endif %}>
           <a href="{{ page.image | relative_url }}" aria-label="View full figure">
-            <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title | escape }}" style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title | escape }}"{% unless page.collection == 'publications' %} style="max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"{% endunless %}>
           </a>
         </div>
       {% endif %}

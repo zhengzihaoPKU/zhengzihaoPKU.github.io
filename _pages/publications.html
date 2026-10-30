@@ -50,15 +50,6 @@ author_profile: true
     color: #666;
     margin-bottom: 0.4em;
   }
-  .pub-preview {
-    margin: 0.6em 0;
-  }
-  .pub-preview img {
-    max-width: 100%;
-    max-height: 280px;
-    border-radius: 4px;
-    border: 1px solid #eee;
-  }
   .pub-links {
     display: flex;
     flex-wrap: wrap;
@@ -133,7 +124,7 @@ author_profile: true
           {% endif %}
           <div class="pub-venue">{{ post.venue | escape }} · {{ post.date | date: "%b %Y" }}{% if post.status == 'accepted' %} · Accepted{% endif %}</div>
           {% if post.image %}
-            <div class="pub-preview">
+            <div class="pub-preview publication-preview">
               <a href="{{ post.image | relative_url }}" aria-label="View full figure for {{ publication_title | escape }}">
                 <img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: publication_title | escape }}" loading="lazy">
               </a>

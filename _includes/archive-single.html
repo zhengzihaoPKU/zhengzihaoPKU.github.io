@@ -35,9 +35,9 @@
     </h2>
     
     {% if post.image %}
-      <div class="archive__item-teaser" style="margin-bottom: 0.5em;">
+      <div{% if post.collection == 'publications' %} class="publication-preview"{% else %} class="archive__item-teaser" style="margin-bottom: 0.5em;"{% endif %}>
         <a href="{{ post.image | relative_url }}" aria-label="View full figure">
-          <img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title | escape }}" loading="lazy" style="max-width: 100%; height: auto; border-radius: 4px;">
+          <img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | default: post.title | escape }}" loading="lazy"{% unless post.collection == 'publications' %} style="max-width: 100%; height: auto; border-radius: 4px;"{% endunless %}>
         </a>
       </div>
     {% endif %}
